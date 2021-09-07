@@ -13,19 +13,15 @@ class ModuleSummaryViewController: UIViewController {
     
     let tableViewSections = ["Grade Summary", "Assessment Structure"]
     
-    var sampleAssessments = [
-        Assessment(identifier: "CW1"),
-        Assessment(identifier: "CW2"),
-        Assessment(identifier: "CW3"),
-        Assessment(identifier: "CW4"),
-        Assessment(identifier: "CW5"),
+    var sampleAssessments: [Assessment] = [
+        
     ]
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = module?.identifier
+        navigationItem.title = module?.name
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ModuleTableViewCell", bundle: nil), forCellReuseIdentifier: "ModuleTableViewCell")
@@ -72,7 +68,7 @@ extension ModuleSummaryViewController: UITableViewDataSource {
             return cell
         } else {
             let myCell = tableView.dequeueReusableCell(withIdentifier: "ModuleTableViewCell", for: indexPath) as! ModuleTableViewCell
-            myCell.moduleIdentifier.text = sampleAssessments[indexPath.row].identifier
+            myCell.moduleIdentifier.text = sampleAssessments[indexPath.row].name
             return myCell
         }
         

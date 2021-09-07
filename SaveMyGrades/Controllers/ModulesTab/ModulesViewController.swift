@@ -12,15 +12,15 @@ class ModulesViewController: UIViewController {
     @IBOutlet weak var modulesTableView: UITableView!
     @IBOutlet weak var modulesTabBarItem: UITabBarItem!
     
-    var sampleModules = [
-        Module(identifier: "MATH317"),
-        Module(identifier: "MATH318"),
-        Module(identifier: "MATH319"),
-        Module(identifier: "MATH327"),
-        Module(identifier: "MATH336"),
-        Module(identifier: "MATH331"),
-        Module(identifier: "MATH330"),
-        Module(identifier: "MATH361"),
+    var sampleModules: [Module] = [
+//        Module(identifier: "MATH317"),
+//        Module(identifier: "MATH318"),
+//        Module(identifier: "MATH319"),
+//        Module(identifier: "MATH327"),
+//        Module(identifier: "MATH336"),
+//        Module(identifier: "MATH331"),
+//        Module(identifier: "MATH330"),
+//        Module(identifier: "MATH361"),
     ]
     
     var currentModuleSelected: Module?
@@ -50,7 +50,7 @@ extension ModulesViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = modulesTableView.dequeueReusableCell(withIdentifier: "ModuleTableViewCell", for: indexPath) as! ModuleTableViewCell
-        cell.moduleIdentifier.text = sampleModules[indexPath.row].identifier
+        cell.moduleIdentifier.text = sampleModules[indexPath.row].name
         return cell
     }
 

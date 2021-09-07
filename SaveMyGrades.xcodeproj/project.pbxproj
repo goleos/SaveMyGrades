@@ -10,7 +10,6 @@
 		B3C7C8F226E75EF900A5A46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C8F126E75EF900A5A46C /* AppDelegate.swift */; };
 		B3C7C8F426E75EF900A5A46C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C8F326E75EF900A5A46C /* SceneDelegate.swift */; };
 		B3C7C8FB26E75EFA00A5A46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C8FA26E75EFA00A5A46C /* Assets.xcassets */; };
-		B3C7C8FE26E75EFA00A5A46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C8FC26E75EFA00A5A46C /* LaunchScreen.storyboard */; };
 		B3C7C92A26E7608700A5A46C /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C90726E7608700A5A46C /* Grade.swift */; };
 		B3C7C92B26E7608700A5A46C /* UKAlevel.json in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C90826E7608700A5A46C /* UKAlevel.json */; };
 		B3C7C92C26E7608700A5A46C /* UKDegreeClassification.json in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C90926E7608700A5A46C /* UKDegreeClassification.json */; };
@@ -36,9 +35,10 @@
 		B3C7C94226E7608700A5A46C /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C92526E7608700A5A46C /* HeaderTableViewCell.swift */; };
 		B3C7C94326E7608700A5A46C /* ModuleSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C92826E7608700A5A46C /* ModuleSummaryViewController.swift */; };
 		B3C7C94426E7608700A5A46C /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C92926E7608700A5A46C /* ModulesViewController.swift */; };
-		B3C7C94726E7614000A5A46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C94526E7614000A5A46C /* Main.storyboard */; };
 		B3C7C95726E7982100A5A46C /* GradingMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C95626E7982100A5A46C /* GradingMethod.swift */; };
 		B3C7C95A26E79E8100A5A46C /* RussiaFivePointsSystem.json in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C95926E79E8100A5A46C /* RussiaFivePointsSystem.json */; };
+		B3C7C96526E7AC1500A5A46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C96126E7AC1500A5A46C /* LaunchScreen.storyboard */; };
+		B3C7C96726E7AE5B00A5A46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C96326E7AC1500A5A46C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +46,6 @@
 		B3C7C8F126E75EF900A5A46C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3C7C8F326E75EF900A5A46C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B3C7C8FA26E75EFA00A5A46C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B3C7C8FD26E75EFA00A5A46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3C7C8FF26E75EFA00A5A46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3C7C90726E7608700A5A46C /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
 		B3C7C90826E7608700A5A46C /* UKAlevel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UKAlevel.json; sourceTree = "<group>"; };
@@ -73,9 +72,10 @@
 		B3C7C92526E7608700A5A46C /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		B3C7C92826E7608700A5A46C /* ModuleSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleSummaryViewController.swift; sourceTree = "<group>"; };
 		B3C7C92926E7608700A5A46C /* ModulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesViewController.swift; sourceTree = "<group>"; };
-		B3C7C94626E7614000A5A46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SaveMyGrades/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		B3C7C95626E7982100A5A46C /* GradingMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingMethod.swift; sourceTree = "<group>"; };
 		B3C7C95926E79E8100A5A46C /* RussiaFivePointsSystem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RussiaFivePointsSystem.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		B3C7C96226E7AC1500A5A46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SaveMyGrades/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3C7C96426E7AC1500A5A46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SaveMyGrades/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 				B3C7C8F126E75EF900A5A46C /* AppDelegate.swift */,
 				B3C7C8F326E75EF900A5A46C /* SceneDelegate.swift */,
 				B3C7C8FA26E75EFA00A5A46C /* Assets.xcassets */,
-				B3C7C8FC26E75EFA00A5A46C /* LaunchScreen.storyboard */,
+				B3C7C96126E7AC1500A5A46C /* LaunchScreen.storyboard */,
 				B3C7C8FF26E75EFA00A5A46C /* Info.plist */,
 			);
 			path = SaveMyGrades;
@@ -190,8 +190,8 @@
 			children = (
 				B3C7C91F26E7608700A5A46C /* ModuleTableViewCell.xib */,
 				B3C7C92026E7608700A5A46C /* CustomButton.swift */,
-				B3C7C94526E7614000A5A46C /* Main.storyboard */,
 				B3C7C92326E7608700A5A46C /* ModuleTableViewCell.swift */,
+				B3C7C96326E7AC1500A5A46C /* Main.storyboard */,
 				B3C7C92426E7608700A5A46C /* HeaderTableViewCell.xib */,
 				B3C7C92526E7608700A5A46C /* HeaderTableViewCell.swift */,
 			);
@@ -282,10 +282,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C7C94726E7614000A5A46C /* Main.storyboard in Resources */,
+				B3C7C96526E7AC1500A5A46C /* LaunchScreen.storyboard in Resources */,
 				B3C7C92B26E7608700A5A46C /* UKAlevel.json in Resources */,
 				B3C7C94126E7608700A5A46C /* HeaderTableViewCell.xib in Resources */,
-				B3C7C8FE26E75EFA00A5A46C /* LaunchScreen.storyboard in Resources */,
+				B3C7C96726E7AE5B00A5A46C /* Main.storyboard in Resources */,
 				B3C7C8FB26E75EFA00A5A46C /* Assets.xcassets in Resources */,
 				B3C7C95A26E79E8100A5A46C /* RussiaFivePointsSystem.json in Resources */,
 				B3C7C92C26E7608700A5A46C /* UKDegreeClassification.json in Resources */,
@@ -330,18 +330,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B3C7C8FC26E75EFA00A5A46C /* LaunchScreen.storyboard */ = {
+		B3C7C96126E7AC1500A5A46C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B3C7C8FD26E75EFA00A5A46C /* Base */,
+				B3C7C96226E7AC1500A5A46C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		B3C7C94526E7614000A5A46C /* Main.storyboard */ = {
+		B3C7C96326E7AC1500A5A46C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B3C7C94626E7614000A5A46C /* Base */,
+				B3C7C96426E7AC1500A5A46C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -473,7 +473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44VWPY85CN;
 				INFOPLIST_FILE = SaveMyGrades/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,7 +493,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44VWPY85CN;
 				INFOPLIST_FILE = SaveMyGrades/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

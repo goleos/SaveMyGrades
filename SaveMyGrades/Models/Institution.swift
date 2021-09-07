@@ -22,13 +22,15 @@ class Institution: AggregationComponent {
     }
     
     
-    static var shared: Institution?
+    static var shared: Institution? = nil
     
     let institutionType: InstitutionType
     var auxiliaryGradingMethods: [GradingMethod] = []
     
-    init(type: InstitutionType) {
+    init(type: InstitutionType, primaryGradingMethod: GradingMethod, auxiliaryGradingMethods: [GradingMethod]) {
         self.institutionType = type
+        self.displayGradingMethod = primaryGradingMethod
+        self.auxiliaryGradingMethods = auxiliaryGradingMethods
     }
 }
 
