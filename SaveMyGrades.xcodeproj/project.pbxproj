@@ -14,7 +14,6 @@
 		B3C7C92A26E7608700A5A46C /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C90726E7608700A5A46C /* Grade.swift */; };
 		B3C7C92B26E7608700A5A46C /* UKAlevel.json in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C90826E7608700A5A46C /* UKAlevel.json */; };
 		B3C7C92C26E7608700A5A46C /* UKDegreeClassification.json in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C90926E7608700A5A46C /* UKDegreeClassification.json */; };
-		B3C7C92D26E7608700A5A46C /* GradingSystems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C90A26E7608700A5A46C /* GradingSystems.swift */; };
 		B3C7C92E26E7608700A5A46C /* GenericComponentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C90C26E7608700A5A46C /* GenericComponentState.swift */; };
 		B3C7C92F26E7608700A5A46C /* ComponentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C90D26E7608700A5A46C /* ComponentState.swift */; };
 		B3C7C93026E7608700A5A46C /* ModuleComponentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C90E26E7608700A5A46C /* ModuleComponentState.swift */; };
@@ -38,6 +37,8 @@
 		B3C7C94326E7608700A5A46C /* ModuleSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C92826E7608700A5A46C /* ModuleSummaryViewController.swift */; };
 		B3C7C94426E7608700A5A46C /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C92926E7608700A5A46C /* ModulesViewController.swift */; };
 		B3C7C94726E7614000A5A46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C94526E7614000A5A46C /* Main.storyboard */; };
+		B3C7C95726E7982100A5A46C /* GradingMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C95626E7982100A5A46C /* GradingMethod.swift */; };
+		B3C7C95A26E79E8100A5A46C /* RussiaFivePointsSystem.json in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C95926E79E8100A5A46C /* RussiaFivePointsSystem.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +51,6 @@
 		B3C7C90726E7608700A5A46C /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
 		B3C7C90826E7608700A5A46C /* UKAlevel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UKAlevel.json; sourceTree = "<group>"; };
 		B3C7C90926E7608700A5A46C /* UKDegreeClassification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UKDegreeClassification.json; sourceTree = "<group>"; };
-		B3C7C90A26E7608700A5A46C /* GradingSystems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradingSystems.swift; sourceTree = "<group>"; };
 		B3C7C90C26E7608700A5A46C /* GenericComponentState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericComponentState.swift; sourceTree = "<group>"; };
 		B3C7C90D26E7608700A5A46C /* ComponentState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentState.swift; sourceTree = "<group>"; };
 		B3C7C90E26E7608700A5A46C /* ModuleComponentState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleComponentState.swift; sourceTree = "<group>"; };
@@ -74,6 +74,8 @@
 		B3C7C92826E7608700A5A46C /* ModuleSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleSummaryViewController.swift; sourceTree = "<group>"; };
 		B3C7C92926E7608700A5A46C /* ModulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesViewController.swift; sourceTree = "<group>"; };
 		B3C7C94626E7614000A5A46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SaveMyGrades/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		B3C7C95626E7982100A5A46C /* GradingMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingMethod.swift; sourceTree = "<group>"; };
+		B3C7C95926E79E8100A5A46C /* RussiaFivePointsSystem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RussiaFivePointsSystem.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,9 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				B3C7C90726E7608700A5A46C /* Grade.swift */,
-				B3C7C90826E7608700A5A46C /* UKAlevel.json */,
-				B3C7C90926E7608700A5A46C /* UKDegreeClassification.json */,
-				B3C7C90A26E7608700A5A46C /* GradingSystems.swift */,
+				B3C7C95626E7982100A5A46C /* GradingMethod.swift */,
+				B3C7C95826E798ED00A5A46C /* GradingMethods */,
 			);
 			path = Grades;
 			sourceTree = "<group>";
@@ -214,6 +215,16 @@
 			path = ModulesTab;
 			sourceTree = "<group>";
 		};
+		B3C7C95826E798ED00A5A46C /* GradingMethods */ = {
+			isa = PBXGroup;
+			children = (
+				B3C7C90826E7608700A5A46C /* UKAlevel.json */,
+				B3C7C90926E7608700A5A46C /* UKDegreeClassification.json */,
+				B3C7C95926E79E8100A5A46C /* RussiaFivePointsSystem.json */,
+			);
+			path = GradingMethods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,6 +287,7 @@
 				B3C7C94126E7608700A5A46C /* HeaderTableViewCell.xib in Resources */,
 				B3C7C8FE26E75EFA00A5A46C /* LaunchScreen.storyboard in Resources */,
 				B3C7C8FB26E75EFA00A5A46C /* Assets.xcassets in Resources */,
+				B3C7C95A26E79E8100A5A46C /* RussiaFivePointsSystem.json in Resources */,
 				B3C7C92C26E7608700A5A46C /* UKDegreeClassification.json in Resources */,
 				B3C7C93D26E7608700A5A46C /* ModuleTableViewCell.xib in Resources */,
 			);
@@ -291,6 +303,7 @@
 				B3C7C93726E7608700A5A46C /* Exam.swift in Sources */,
 				B3C7C94326E7608700A5A46C /* ModuleSummaryViewController.swift in Sources */,
 				B3C7C93A26E7608700A5A46C /* ComponentError.swift in Sources */,
+				B3C7C95726E7982100A5A46C /* GradingMethod.swift in Sources */,
 				B3C7C92E26E7608700A5A46C /* GenericComponentState.swift in Sources */,
 				B3C7C93226E7608700A5A46C /* AcademicSession.swift in Sources */,
 				B3C7C93E26E7608700A5A46C /* CustomButton.swift in Sources */,
@@ -310,7 +323,6 @@
 				B3C7C93826E7608700A5A46C /* Quiz.swift in Sources */,
 				B3C7C93526E7608700A5A46C /* Assessment.swift in Sources */,
 				B3C7C93426E7608700A5A46C /* StudyComponent.swift in Sources */,
-				B3C7C92D26E7608700A5A46C /* GradingSystems.swift in Sources */,
 				B3C7C93C26E7608700A5A46C /* ModuleError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
