@@ -1,0 +1,12 @@
+
+{
+    "name": "Five-point scale from 1(lowest) to 5(highest)",
+    "countries": ["Russia"],
+    "thresholds": {
+        "5": 80,
+        "4": 60,
+        "3": 40,
+        "2": 20,
+        "1": 0
+    }
+}
