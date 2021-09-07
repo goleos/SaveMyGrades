@@ -39,7 +39,20 @@
 		B3C7C95A26E79E8100A5A46C /* RussiaFivePointsSystem.json in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C95926E79E8100A5A46C /* RussiaFivePointsSystem.json */; };
 		B3C7C96526E7AC1500A5A46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C96126E7AC1500A5A46C /* LaunchScreen.storyboard */; };
 		B3C7C96726E7AE5B00A5A46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C96326E7AC1500A5A46C /* Main.storyboard */; };
+		B3C7C9B426E7B7AC00A5A46C /* SaveMyGradesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C9B326E7B7AC00A5A46C /* SaveMyGradesTests.swift */; };
+		B3C7C9BC26E7CC7C00A5A46C /* ValidationMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C9BB26E7CC7C00A5A46C /* ValidationMethods.swift */; };
+		B3C7C9BE26E7D34800A5A46C /* GradingFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C9BD26E7D34800A5A46C /* GradingFunctionality.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3C7C9B626E7B7AC00A5A46C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3C7C8E626E75EF900A5A46C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3C7C8ED26E75EF900A5A46C;
+			remoteInfo = SaveMyGrades;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B3C7C8EE26E75EF900A5A46C /* SaveMyGrades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveMyGrades.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,10 +89,22 @@
 		B3C7C95926E79E8100A5A46C /* RussiaFivePointsSystem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RussiaFivePointsSystem.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		B3C7C96226E7AC1500A5A46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SaveMyGrades/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3C7C96426E7AC1500A5A46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SaveMyGrades/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3C7C9B126E7B7AC00A5A46C /* SaveMyGradesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveMyGradesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C7C9B326E7B7AC00A5A46C /* SaveMyGradesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveMyGradesTests.swift; sourceTree = "<group>"; };
+		B3C7C9B526E7B7AC00A5A46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3C7C9BB26E7CC7C00A5A46C /* ValidationMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationMethods.swift; sourceTree = "<group>"; };
+		B3C7C9BD26E7D34800A5A46C /* GradingFunctionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingFunctionality.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B3C7C8EB26E75EF900A5A46C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C7C9AE26E7B7AC00A5A46C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				B3C7C8F026E75EF900A5A46C /* SaveMyGrades */,
+				B3C7C9B226E7B7AC00A5A46C /* SaveMyGradesTests */,
 				B3C7C8EF26E75EF900A5A46C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				B3C7C8EE26E75EF900A5A46C /* SaveMyGrades.app */,
+				B3C7C9B126E7B7AC00A5A46C /* SaveMyGradesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,11 +150,12 @@
 		B3C7C90526E7608700A5A46C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B3C7C91A26E7608700A5A46C /* Errors */,
 				B3C7C90626E7608700A5A46C /* Grades */,
 				B3C7C90B26E7608700A5A46C /* ComponentStates */,
 				B3C7C91026E7608700A5A46C /* StudyComponents */,
 				B3C7C91926E7608700A5A46C /* Institution.swift */,
-				B3C7C91A26E7608700A5A46C /* Errors */,
+				B3C7C9BB26E7CC7C00A5A46C /* ValidationMethods.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -225,6 +253,16 @@
 			path = GradingMethods;
 			sourceTree = "<group>";
 		};
+		B3C7C9B226E7B7AC00A5A46C /* SaveMyGradesTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3C7C9BD26E7D34800A5A46C /* GradingFunctionality.swift */,
+				B3C7C9B326E7B7AC00A5A46C /* SaveMyGradesTests.swift */,
+				B3C7C9B526E7B7AC00A5A46C /* Info.plist */,
+			);
+			path = SaveMyGradesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,6 +283,24 @@
 			productReference = B3C7C8EE26E75EF900A5A46C /* SaveMyGrades.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B3C7C9B026E7B7AC00A5A46C /* SaveMyGradesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3C7C9BA26E7B7AC00A5A46C /* Build configuration list for PBXNativeTarget "SaveMyGradesTests" */;
+			buildPhases = (
+				B3C7C9AD26E7B7AC00A5A46C /* Sources */,
+				B3C7C9AE26E7B7AC00A5A46C /* Frameworks */,
+				B3C7C9AF26E7B7AC00A5A46C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3C7C9B726E7B7AC00A5A46C /* PBXTargetDependency */,
+			);
+			name = SaveMyGradesTests;
+			productName = SaveMyGradesTests;
+			productReference = B3C7C9B126E7B7AC00A5A46C /* SaveMyGradesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -256,6 +312,10 @@
 				TargetAttributes = {
 					B3C7C8ED26E75EF900A5A46C = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					B3C7C9B026E7B7AC00A5A46C = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = B3C7C8ED26E75EF900A5A46C;
 					};
 				};
 			};
@@ -273,6 +333,7 @@
 			projectRoot = "";
 			targets = (
 				B3C7C8ED26E75EF900A5A46C /* SaveMyGrades */,
+				B3C7C9B026E7B7AC00A5A46C /* SaveMyGradesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,6 +351,13 @@
 				B3C7C95A26E79E8100A5A46C /* RussiaFivePointsSystem.json in Resources */,
 				B3C7C92C26E7608700A5A46C /* UKDegreeClassification.json in Resources */,
 				B3C7C93D26E7608700A5A46C /* ModuleTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C7C9AF26E7B7AC00A5A46C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +384,7 @@
 				B3C7C92F26E7608700A5A46C /* ComponentState.swift in Sources */,
 				B3C7C93326E7608700A5A46C /* AggregationComponent.swift in Sources */,
 				B3C7C94426E7608700A5A46C /* ModulesViewController.swift in Sources */,
+				B3C7C9BC26E7CC7C00A5A46C /* ValidationMethods.swift in Sources */,
 				B3C7C93B26E7608700A5A46C /* GradingError.swift in Sources */,
 				B3C7C92A26E7608700A5A46C /* Grade.swift in Sources */,
 				B3C7C93026E7608700A5A46C /* ModuleComponentState.swift in Sources */,
@@ -327,7 +396,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B3C7C9AD26E7B7AC00A5A46C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C7C9BE26E7D34800A5A46C /* GradingFunctionality.swift in Sources */,
+				B3C7C9B426E7B7AC00A5A46C /* SaveMyGradesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3C7C9B726E7B7AC00A5A46C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3C7C8ED26E75EF900A5A46C /* SaveMyGrades */;
+			targetProxy = B3C7C9B626E7B7AC00A5A46C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B3C7C96126E7AC1500A5A46C /* LaunchScreen.storyboard */ = {
@@ -505,6 +591,46 @@
 			};
 			name = Release;
 		};
+		B3C7C9B826E7B7AC00A5A46C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44VWPY85CN;
+				INFOPLIST_FILE = SaveMyGradesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leogold.SaveMyGradesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaveMyGrades.app/SaveMyGrades";
+			};
+			name = Debug;
+		};
+		B3C7C9B926E7B7AC00A5A46C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44VWPY85CN;
+				INFOPLIST_FILE = SaveMyGradesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leogold.SaveMyGradesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaveMyGrades.app/SaveMyGrades";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -522,6 +648,15 @@
 			buildConfigurations = (
 				B3C7C90326E75EFA00A5A46C /* Debug */,
 				B3C7C90426E75EFA00A5A46C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3C7C9BA26E7B7AC00A5A46C /* Build configuration list for PBXNativeTarget "SaveMyGradesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C7C9B826E7B7AC00A5A46C /* Debug */,
+				B3C7C9B926E7B7AC00A5A46C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

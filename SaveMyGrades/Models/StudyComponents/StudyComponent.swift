@@ -37,18 +37,9 @@ class StudyComponent {
         guard !isRemoved else {
             throw NSError()
         }
-        guard (0.0...100.0).contains(self.weight) else {
-            throw ComponentError.invalidWeight
-        }
-        guard (parentComponent.cumulativeWeightOfComponents + self.weight) <= 100 else {
-            throw ComponentError.weightDoesNotFit
-        }
-        let componentNames = parentComponent.assessmentStructure.map {
-            return $0.name
-        }
-        guard !(componentNames.contains(self.name)) else {
-            throw ComponentError.duplicateNameRefusal
-        }
+        try ValidationMethods.weightIsBetween0And1(weight)
+        try ValidationMethods.weightIsNotExcessiveInAssessmentStructure(weight, parentComponent)
+        try ValidationMethods.noDuplicateNameInParent(name, parentComponent)
         self.isValid = true
         if addToParent {
             parentComponent.assessmentStructure.append(self)

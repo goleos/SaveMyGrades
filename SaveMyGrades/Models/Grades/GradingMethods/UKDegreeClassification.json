@@ -1,6 +1,6 @@
 
 {
-    "name": "A level",
+    "name": "UK University Degree Classification",
     "countries": ["UK"],
     "thresholds": {
         "First Class": 70,

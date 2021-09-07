@@ -17,6 +17,9 @@ struct Grade {
     var percentageGradeValue: Double
     
     init(_ rawValue: String, gradingMethod: GradingMethod = .percentageGrade) throws {
+        if gradingMethod.name == GradingMethod.percentageGrade.name {
+        try ValidationMethods.validPercentageGradeStringValue(rawValue)
+        }
         guard gradingMethod.isValidGradeString(rawValue) else {
             throw GradingError.invalidGrade
         }
@@ -32,6 +35,7 @@ struct Grade {
         }
         self.percentageGradeValue = value
     }
+    
     
     static func average(from array: [Grade], showAs gradingMethod: GradingMethod = .percentageGrade) -> Grade {
         var percentageGradeTotal = 0.0

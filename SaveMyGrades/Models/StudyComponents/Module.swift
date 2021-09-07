@@ -42,7 +42,7 @@ class Module: StudyComponent, AggregationComponent {
         guard !((componentState.name == ModuleComponentState.graded.name) && (averageToDate == nil)) else {
             throw ComponentError.gradedWithNoGrade
         }
-        try super.validate()
+        try super.validate(addToParent: addToParent)
     }
     
 }
