@@ -1,48 +1,47 @@
 //
 //  Module.swift
-//  Study Planner
+//  SaveMyGrades
 //
-//  Created by Leonid Goldberg on 01/09/2021.
+//  Created by Leonid Goldberg on 08/09/2021.
 //
 
 import Foundation
 
-class Module: StudyComponent, AggregationComponent {
-    var assessmentStructure: [StudyComponent] = []
+class Module: Assessment {
+    var gradeableComponents = [Assessment]()
+    var startDate: Date?
     
-    var cumulativeWeightOfComponents: Double {
-        guard !assessmentStructure.isEmpty else {
+    var gradedComponents: [Assessment] {
+        return gradeableComponents.filter { assessment in
+            return assessment.isGraded } }
+    
+    var cumulativeWeightOfAllComponents: Double {
+        guard !gradeableComponents.isEmpty else {
             return 0.0
         }
-        return assessmentStructure.map {
-            return $0.weight
+        return gradeableComponents.map {
+            return $0.weight!
         }.reduce(0.0, +)
     }
     
+    var cumulativeGrade: Grade { gradeableComponents.weightedGrade() }
     
-    var componentState: ModuleComponentState = .notCompleted
-    var displayGradingMethod: GradingMethod = .percentageGrade
-    
-    var description: String?
-            
-    var averageToDate: Grade? {
-        let existingGrades = assessmentStructure.filter { assessment in
-            if (assessment as! Assessment).grade != nil {
-                return true
-            } else {
-                return false
-            }
-        }
-        return Grade.average(from: existingGrades.map({
-            return ($0 as! Assessment).grade!
-        }), showAs: displayGradingMethod)
+    override var grade: Grade? { get { Grade(percentage: (cumulativeGrade.percentage / cumulativeWeightOfAllComponents))}
+        @available(*, unavailable)
+        set { }
     }
-        
-    override func validate(addToParent: Bool = false) throws {
-        guard !((componentState.name == ModuleComponentState.graded.name) && (averageToDate == nil)) else {
-            throw ComponentError.gradedWithNoGrade
+    
+    override func add(task: Task) throws {
+        guard !(task.statusList[0].type == Task.self) else {
+            try super.add(task: task)
+            return
         }
-        try super.validate(addToParent: addToParent)
+        try validate(task: task)
+        gradeableComponents.append(task as! Assessment)
+    }
+    
+    func add(assessment: Assessment) throws {
+        try add(task: assessment)
     }
     
 }

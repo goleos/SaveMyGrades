@@ -18,8 +18,8 @@ struct ValidationMethods {
         }
     }
     
-    static func weightIsNotExcessiveInAssessmentStructure(_ weight: Double, _ parent: AggregationComponent) throws {
-        guard (parent.cumulativeWeightOfComponents + weight) <= 1.0 else {
+    static func weightIsNotExcessive(_ weight: Double, in component: Aggregable) throws {
+        guard (component.cumulativeWeightOfAllComponents + weight) <= 1.0 else {
             throw ValidationError.excessiveWeightInParent
         }
     }
@@ -33,7 +33,7 @@ struct ValidationMethods {
     
     static func validPercentageGradeStringValue(_ value: String) throws {
         let doubleValue = try stringIsANumber(value)
-        guard doubleValue > 0.0 else {
+        guard doubleValue >= 0.0 else {
             throw ValidationError.percentageGradeIsNegative
         }
         guard doubleValue <= 100 else {
@@ -41,18 +41,29 @@ struct ValidationMethods {
         }
     }
     
-    static func noDuplicateNameInParent(_ name: String, _ parent: AggregationComponent) throws {
-        let componentNames = parent.assessmentStructure.map {
+    static func noDuplicateNameInTasks(_ name: String, _ tasks: [Task]) throws {
+        let componentNames = tasks.map {
             return $0.name
         }
         guard !(componentNames.contains(name)) else {
             throw ValidationError.duplicateName
         }
     }
+    
+    static func taskStatusIsValid(_ target: TaskStatus, from array: [TaskStatus]) throws {
+        print(target)
+        print(array)
+        guard array.contains(target) else {
+            throw ValidationError.invalidStatus
+        }
+    }
 }
 
 
 enum ValidationError: Error {
+    case nameIsNotProvided
+    case statusIsNotProvided
+    case weightIsNotProvided
     case weightIsNegative
     case weightIsOver1
     case stringIsNotANumber
@@ -60,6 +71,8 @@ enum ValidationError: Error {
     case percentageGradeIsOver100
     case excessiveWeightInParent
     case duplicateName
+    case invalidStatus
+    case taskIsRemoved
 }
 
 
