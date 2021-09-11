@@ -1,54 +1,53 @@
 //
-//  LetterGrade.swift
-//  Study Planner
+//  Grade.swift
+//  SaveMyGrades
 //
 //  Created by Leonid Goldberg on 02/09/2021.
 //
 
 import Foundation
 
-
-
 struct Grade {
-        
-    let value: String
-    let gradingMethod: GradingMethod
-    let allowedPercentageRange: GradingMethod.RangeOrEquality
-    var percentageGradeValue: Double
-    
-    init(_ rawValue: String, gradingMethod: GradingMethod = .percentageGrade) throws {
-        if gradingMethod.name == GradingMethod.percentageGrade.name {
-        try ValidationMethods.validPercentageGradeStringValue(rawValue)
+    let percentage: Double
+    var style: GradingStyle
+    var value: String {
+        guard style == .percentage else {
+            let roundedPercentage = Double(round(10*self.percentage)/10)
+            return "\(roundedPercentage) %"
         }
-        guard gradingMethod.isValidGradeString(rawValue) else {
-            throw GradingError.invalidGrade
-        }
-        self.value = rawValue
-        self.gradingMethod = gradingMethod
-        allowedPercentageRange = self.gradingMethod.converter(rawValue)
-        self.percentageGradeValue = (allowedPercentageRange.lowerBound + allowedPercentageRange.upperBound) / 2
+        for stringValue in style.data.thresholds.keys {
+            if Grade.percentageRange(of: stringValue, with: style).contains(percentage) {
+                return stringValue
+            }
+    }
+        return "ERROR"
     }
     
-    mutating func setPercentageGrade(_ value: Double) throws {
-        guard allowedPercentageRange.contains(value) else {
-            throw GradingError.percentageOutOfRange
-        }
-        self.percentageGradeValue = value
+    init(percentage: Double, style: GradingStyle = .percentage) {
+        self.percentage = percentage
+        self.style = style
     }
     
-    
-    static func average(from array: [Grade], showAs gradingMethod: GradingMethod = .percentageGrade) -> Grade {
-        var percentageGradeTotal = 0.0
-        for grade in array {
-            percentageGradeTotal += grade.percentageGradeValue
-        }
-        let percentageGradeAverage = percentageGradeTotal / Double(array.count)
-        let resultingGradeString = gradingMethod.inverseConverter(percentageGradeAverage)
-        return try! Grade(resultingGradeString, gradingMethod: gradingMethod)
+    init(value: String, style: GradingStyle) {
+        let range = Grade.percentageRange(of: value, with: style)
+        self.percentage = (range.lowerBound + range.upperBound) / 2.0
+        self.style = style
     }
     
-    
+    static func percentageRange(of value: String, with style: GradingStyle) -> Range<Double> {
+        let thresholds = style.data.thresholds
+        let lowerBound = thresholds[value]!
+        let upperBound = thresholds.values.filter({ $0 > lowerBound }).min() ?? 100.0
+        return lowerBound..<upperBound
+    }
 }
 
 
+extension Array where Element == Grade {
+    func average(as style: GradingStyle = .percentage) -> Grade {
+        let percentages = self.map({ return $0.percentage })
+        let percentage = percentages.reduce(0, +) / Double(percentages.count)
+        return Grade(percentage: percentage, style: style)
+    }
+}
 
