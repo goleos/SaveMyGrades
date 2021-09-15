@@ -9,8 +9,15 @@ import Foundation
 
 class Period: Module {
     
-    func add(module: Module) throws {
-        try add(assessment: module)
+    override var assessments: [Assessment] { get {_components.map({
+        return ($0 as! Module).assessments
+    }).reduce([Assessment](), +)}
+    @available(*, unavailable)
+    set {}
+    }
+    
+    var modules: [Assessment] { get { _components }
+        set {_components = newValue}
     }
     
 }

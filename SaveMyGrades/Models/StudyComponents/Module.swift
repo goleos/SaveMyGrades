@@ -8,42 +8,22 @@
 import Foundation
 
 class Module: Assessment {
-    var gradeableComponents = [Assessment]()
+    var assessments: [Assessment] { get { _components }
+        set { _components = newValue }
+    }
+    var _components = [Assessment]()
+    
     var startDate: Date?
     
-    var gradedComponents: [Assessment] {
-        return gradeableComponents.filter { assessment in
-            return assessment.isGraded } }
+    var cumulativeGrade: Grade { _components.weightedGrade }
     
-    var cumulativeWeightOfAllComponents: Double {
-        guard !gradeableComponents.isEmpty else {
-            return 0.0
+    override var grade: Grade? { get {
+        let gradedWeight = _components.gradedComponents.cumulativeWeight
+        guard gradedWeight != 0 else {
+            return nil
         }
-        return gradeableComponents.map {
-            return $0.weight!
-        }.reduce(0.0, +)
-    }
-    
-    var cumulativeGrade: Grade { gradeableComponents.weightedGrade() }
-    
-    override var grade: Grade? { get { Grade(percentage: (cumulativeGrade.percentage / cumulativeWeightOfAllComponents))}
+        return Grade(percentage: (cumulativeGrade.percentage / gradedWeight))}
         @available(*, unavailable)
         set { }
     }
-    
-    override func add(task: Task) throws {
-        guard !(task.statusList[0].type == Task.self) else {
-            try super.add(task: task)
-            return
-        }
-        try validate(task: task)
-        gradeableComponents.append(task as! Assessment)
-    }
-    
-    func add(assessment: Assessment) throws {
-        try add(task: assessment)
-    }
-    
 }
-
-

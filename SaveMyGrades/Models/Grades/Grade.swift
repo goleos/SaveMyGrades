@@ -40,6 +40,36 @@ struct Grade {
         let upperBound = thresholds.values.filter({ $0 > lowerBound }).min() ?? 100.0
         return lowerBound..<upperBound
     }
+    
+    func value(as style: GradingStyle) -> String {
+        var returnGrade = self
+        returnGrade.style = style
+        return returnGrade.value
+    }
+}
+
+extension Grade: Equatable {
+    static func == (lhs: Grade, rhs: Grade) -> Bool {
+        return lhs.percentage == rhs.percentage
+    }
+}
+
+extension Grade: Comparable {
+    static func < (lhs: Grade, rhs: Grade) -> Bool {
+        return lhs.percentage < rhs.percentage
+    }
+    
+    static func > (lhs: Grade, rhs: Grade) -> Bool {
+        return lhs.percentage > rhs.percentage
+    }
+    
+    static func <= (lhs: Grade, rhs: Grade) -> Bool {
+        return lhs.percentage <= rhs.percentage
+    }
+    
+    static func >= (lhs: Grade, rhs: Grade) -> Bool {
+        return lhs.percentage >= rhs.percentage
+    }
 }
 
 

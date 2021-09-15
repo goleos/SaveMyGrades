@@ -39,6 +39,8 @@
 		B3C7C96726E7AE5B00A5A46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C96326E7AC1500A5A46C /* Main.storyboard */; };
 		B3C7C9B426E7B7AC00A5A46C /* SaveMyGradesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C9B326E7B7AC00A5A46C /* SaveMyGradesTests.swift */; };
 		B3C7C9BC26E7CC7C00A5A46C /* ValidationMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C9BB26E7CC7C00A5A46C /* ValidationMethods.swift */; };
+		B3E01D3626F14CFA00B1BA32 /* SetUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E01D3526F14CFA00B1BA32 /* SetUp.storyboard */; };
+		B3E01D3826F14E8100B1BA32 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E01D3726F14E8100B1BA32 /* WelcomeViewController.swift */; };
 		B3EBB99926E8A689000A8329 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EBB99826E8A689000A8329 /* Task.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,8 @@
 		B3C7C9B526E7B7AC00A5A46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3C7C9BB26E7CC7C00A5A46C /* ValidationMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationMethods.swift; sourceTree = "<group>"; };
 		B3C7C9BD26E7D34800A5A46C /* GradingFunctionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingFunctionality.swift; sourceTree = "<group>"; };
+		B3E01D3526F14CFA00B1BA32 /* SetUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetUp.storyboard; sourceTree = "<group>"; };
+		B3E01D3726F14E8100B1BA32 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B3EBB99826E8A689000A8329 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +204,7 @@
 		B3C7C91E26E7608700A5A46C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B3E01D3426F14CCB00B1BA32 /* Welcome */,
 				B3C7C91F26E7608700A5A46C /* ModuleTableViewCell.xib */,
 				B3C7C92026E7608700A5A46C /* CustomButton.swift */,
 				B3C7C92326E7608700A5A46C /* ModuleTableViewCell.swift */,
@@ -214,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				B3C7C92726E7608700A5A46C /* ModulesTab */,
+				B3E01D3726F14E8100B1BA32 /* WelcomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -247,6 +253,14 @@
 				B3C7C9B526E7B7AC00A5A46C /* Info.plist */,
 			);
 			path = SaveMyGradesTests;
+			sourceTree = "<group>";
+		};
+		B3E01D3426F14CCB00B1BA32 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				B3E01D3526F14CFA00B1BA32 /* SetUp.storyboard */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +345,7 @@
 			files = (
 				B3C7C96526E7AC1500A5A46C /* LaunchScreen.storyboard in Resources */,
 				B3C7C92B26E7608700A5A46C /* UKAlevel.json in Resources */,
+				B3E01D3626F14CFA00B1BA32 /* SetUp.storyboard in Resources */,
 				B3C7C94126E7608700A5A46C /* HeaderTableViewCell.xib in Resources */,
 				B3C7C96726E7AE5B00A5A46C /* Main.storyboard in Resources */,
 				B3C7C8FB26E75EFA00A5A46C /* Assets.xcassets in Resources */,
@@ -367,6 +382,7 @@
 				B3C7C8F426E75EF900A5A46C /* SceneDelegate.swift in Sources */,
 				B3C7C93926E7608700A5A46C /* Session.swift in Sources */,
 				B3C7C94026E7608700A5A46C /* ModuleTableViewCell.swift in Sources */,
+				B3E01D3826F14E8100B1BA32 /* WelcomeViewController.swift in Sources */,
 				B3C7C94426E7608700A5A46C /* ModulesViewController.swift in Sources */,
 				B3C7C9BC26E7CC7C00A5A46C /* ValidationMethods.swift in Sources */,
 				B3C7C93B26E7608700A5A46C /* GradingError.swift in Sources */,

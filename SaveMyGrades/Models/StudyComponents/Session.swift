@@ -11,14 +11,18 @@ import Foundation
 
 class Session: Period {
     
-    func add(period: Period) throws {
-        try add(module: period)
+    var periods: [Assessment] { get { _components }
+        set {_components = newValue}
     }
     
-    
+    override var modules: [Assessment] { get {_components.map({
+        return ($0 as! Period).modules
+    }).reduce([Assessment](), +)}
+    @available(*, unavailable)
+    set {}
         
     }
-
+}
 
 
 
