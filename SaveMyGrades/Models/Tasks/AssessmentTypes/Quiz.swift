@@ -8,6 +8,7 @@
 import Foundation
 
 class Quiz: Assessment {
+    
     var totalQuestions: Int?
     var answeredCorrectly: Int?
 }

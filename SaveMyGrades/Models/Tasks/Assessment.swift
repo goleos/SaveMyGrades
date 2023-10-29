@@ -19,7 +19,6 @@ class Assessment: Task {
     var tasks = [Task]()
 }
 
-
 extension Array where Element: Assessment {
     var cumulativeWeight: Weight {
             guard !self.isEmpty else {

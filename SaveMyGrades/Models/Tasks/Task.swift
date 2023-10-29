@@ -7,10 +7,6 @@
 
 import Foundation
 
-
-typealias Aggregable = Module
-typealias Gradeable = Assessment
-
 class Task {
     static var statusList: [TaskStatus] {
         return TaskStatus.allCases.filter {
@@ -20,11 +16,16 @@ class Task {
     var name: String?
     var status: TaskStatus
     
-    var dueDate: Date?
+    var deadline: Date?
     var description: String?
 
     init() {
         status = TaskStatus.allCases.filter({return $0.type == Self.self})[0]
+    }
+    
+    init(name: String, status: TaskStatus) {
+        self.name = name
+        self.status = status
     }
 }
 

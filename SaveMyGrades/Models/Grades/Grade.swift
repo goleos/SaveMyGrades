@@ -11,7 +11,7 @@ struct Grade {
     let percentage: Double
     var style: GradingStyle
     var value: String {
-        guard style == .percentage else {
+        guard style != .percentage else {
             let roundedPercentage = Double(round(10*self.percentage)/10)
             return "\(roundedPercentage) %"
         }

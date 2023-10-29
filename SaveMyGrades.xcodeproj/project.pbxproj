@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B306518026F4F87D00852CE8 /* SampleUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306517C26F4D84900852CE8 /* SampleUserData.swift */; };
+		B306518126F4F88500852CE8 /* SampleUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306517C26F4D84900852CE8 /* SampleUserData.swift */; };
+		B33D8D1126F3610A00720C48 /* TaskIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33D8D1026F3610A00720C48 /* TaskIcon.swift */; };
 		B33ED7C826EC01D100F23892 /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C775026E90309001E48D7 /* Assessment.swift */; };
 		B33ED7C926EC01F700F23892 /* GradingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361E62626EBFEF500A430E8 /* GradingStyle.swift */; };
 		B3458AA426ECC1D700DD42BB /* GradingStyleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458AA326ECC1D700DD42BB /* GradingStyleTest.swift */; };
 		B3458AA526ECC2E100DD42BB /* GradingFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C9BD26E7D34800A5A46C /* GradingFunctionality.swift */; };
 		B361692126E93DCE001DAE26 /* TaskFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361692026E93DCE001DAE26 /* TaskFunctionality.swift */; };
 		B361692326E950E3001DAE26 /* TaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361692226E950E3001DAE26 /* TaskStatus.swift */; };
+		B3801EC8270CA90D006EC19D /* Fields.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3801EC7270CA90D006EC19D /* Fields.txt */; };
+		B3801ECA270CAB67006EC19D /* AddTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3801EC9270CAB67006EC19D /* AddTab.storyboard */; };
+		B3801ECC270CB4C2006EC19D /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3801ECB270CB4C2006EC19D /* TabBar.swift */; };
 		B39C775326E90313001E48D7 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C775226E90313001E48D7 /* Module.swift */; };
 		B39C775526E9031E001E48D7 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C775426E9031E001E48D7 /* Period.swift */; };
 		B3C7C8F226E75EF900A5A46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C8F126E75EF900A5A46C /* AppDelegate.swift */; };
@@ -24,21 +30,23 @@
 		B3C7C93726E7608700A5A46C /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C91726E7608700A5A46C /* Exam.swift */; };
 		B3C7C93826E7608700A5A46C /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C91826E7608700A5A46C /* Quiz.swift */; };
 		B3C7C93926E7608700A5A46C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C91926E7608700A5A46C /* Session.swift */; };
-		B3C7C93A26E7608700A5A46C /* ComponentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C91B26E7608700A5A46C /* ComponentError.swift */; };
-		B3C7C93B26E7608700A5A46C /* GradingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C91C26E7608700A5A46C /* GradingError.swift */; };
-		B3C7C93C26E7608700A5A46C /* ModuleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C91D26E7608700A5A46C /* ModuleError.swift */; };
 		B3C7C93D26E7608700A5A46C /* ModuleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C91F26E7608700A5A46C /* ModuleTableViewCell.xib */; };
-		B3C7C93E26E7608700A5A46C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C92026E7608700A5A46C /* CustomButton.swift */; };
 		B3C7C94026E7608700A5A46C /* ModuleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C92326E7608700A5A46C /* ModuleTableViewCell.swift */; };
 		B3C7C94126E7608700A5A46C /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C92426E7608700A5A46C /* HeaderTableViewCell.xib */; };
 		B3C7C94226E7608700A5A46C /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C92526E7608700A5A46C /* HeaderTableViewCell.swift */; };
-		B3C7C94326E7608700A5A46C /* ModuleSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C92826E7608700A5A46C /* ModuleSummaryViewController.swift */; };
-		B3C7C94426E7608700A5A46C /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C92926E7608700A5A46C /* ModulesViewController.swift */; };
 		B3C7C95A26E79E8100A5A46C /* RussiaFivePointsSystem.json in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C95926E79E8100A5A46C /* RussiaFivePointsSystem.json */; };
 		B3C7C96526E7AC1500A5A46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C96126E7AC1500A5A46C /* LaunchScreen.storyboard */; };
 		B3C7C96726E7AE5B00A5A46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C96326E7AC1500A5A46C /* Main.storyboard */; };
 		B3C7C9B426E7B7AC00A5A46C /* SaveMyGradesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C9B326E7B7AC00A5A46C /* SaveMyGradesTests.swift */; };
-		B3C7C9BC26E7CC7C00A5A46C /* ValidationMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C9BB26E7CC7C00A5A46C /* ValidationMethods.swift */; };
+		B3C7C9BC26E7CC7C00A5A46C /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7C9BB26E7CC7C00A5A46C /* ValidationError.swift */; };
+		B3DBBC1726F2738500730501 /* ActionsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DBBC1626F2738500730501 /* ActionsTab.storyboard */; };
+		B3DBBC1926F276D100730501 /* ModulesTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DBBC1826F276D100730501 /* ModulesTab.storyboard */; };
+		B3DBBC1D26F279B200730501 /* PeriodSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DBBC1B26F279B200730501 /* PeriodSelector.swift */; };
+		B3DBBC1E26F279B200730501 /* PeriodSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3DBBC1C26F279B200730501 /* PeriodSelector.xib */; };
+		B3DBBC2126F27AA400730501 /* ModulesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DBBC2026F27AA400730501 /* ModulesController.swift */; };
+		B3DBBC2326F27FC400730501 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DBBC2226F27FC400730501 /* UserData.swift */; };
+		B3DBBC2626F2954B00730501 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DBBC2426F2954B00730501 /* TaskCell.swift */; };
+		B3DBBC2726F2954B00730501 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3DBBC2526F2954B00730501 /* TaskCell.xib */; };
 		B3E01D3626F14CFA00B1BA32 /* SetUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E01D3526F14CFA00B1BA32 /* SetUp.storyboard */; };
 		B3E01D3826F14E8100B1BA32 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E01D3726F14E8100B1BA32 /* WelcomeViewController.swift */; };
 		B3EBB99926E8A689000A8329 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EBB99826E8A689000A8329 /* Task.swift */; };
@@ -55,10 +63,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B306517C26F4D84900852CE8 /* SampleUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUserData.swift; sourceTree = "<group>"; };
+		B33D8D1026F3610A00720C48 /* TaskIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskIcon.swift; sourceTree = "<group>"; };
 		B3458AA326ECC1D700DD42BB /* GradingStyleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingStyleTest.swift; sourceTree = "<group>"; };
 		B361692026E93DCE001DAE26 /* TaskFunctionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFunctionality.swift; sourceTree = "<group>"; };
 		B361692226E950E3001DAE26 /* TaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatus.swift; sourceTree = "<group>"; };
 		B361E62626EBFEF500A430E8 /* GradingStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingStyle.swift; sourceTree = "<group>"; };
+		B3801EC7270CA90D006EC19D /* Fields.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fields.txt; sourceTree = "<group>"; };
+		B3801EC9270CAB67006EC19D /* AddTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTab.storyboard; sourceTree = "<group>"; };
+		B3801ECB270CB4C2006EC19D /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		B39C775026E90309001E48D7 /* Assessment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
 		B39C775226E90313001E48D7 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		B39C775426E9031E001E48D7 /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
@@ -73,24 +86,26 @@
 		B3C7C91726E7608700A5A46C /* Exam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
 		B3C7C91826E7608700A5A46C /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		B3C7C91926E7608700A5A46C /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		B3C7C91B26E7608700A5A46C /* ComponentError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentError.swift; sourceTree = "<group>"; };
-		B3C7C91C26E7608700A5A46C /* GradingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradingError.swift; sourceTree = "<group>"; };
-		B3C7C91D26E7608700A5A46C /* ModuleError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleError.swift; sourceTree = "<group>"; };
 		B3C7C91F26E7608700A5A46C /* ModuleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModuleTableViewCell.xib; sourceTree = "<group>"; };
-		B3C7C92026E7608700A5A46C /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B3C7C92326E7608700A5A46C /* ModuleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleTableViewCell.swift; sourceTree = "<group>"; };
 		B3C7C92426E7608700A5A46C /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 		B3C7C92526E7608700A5A46C /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
-		B3C7C92826E7608700A5A46C /* ModuleSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleSummaryViewController.swift; sourceTree = "<group>"; };
-		B3C7C92926E7608700A5A46C /* ModulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesViewController.swift; sourceTree = "<group>"; };
 		B3C7C95926E79E8100A5A46C /* RussiaFivePointsSystem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RussiaFivePointsSystem.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		B3C7C96226E7AC1500A5A46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SaveMyGrades/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3C7C96426E7AC1500A5A46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SaveMyGrades/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3C7C9B126E7B7AC00A5A46C /* SaveMyGradesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveMyGradesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C7C9B326E7B7AC00A5A46C /* SaveMyGradesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveMyGradesTests.swift; sourceTree = "<group>"; };
 		B3C7C9B526E7B7AC00A5A46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3C7C9BB26E7CC7C00A5A46C /* ValidationMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationMethods.swift; sourceTree = "<group>"; };
+		B3C7C9BB26E7CC7C00A5A46C /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		B3C7C9BD26E7D34800A5A46C /* GradingFunctionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingFunctionality.swift; sourceTree = "<group>"; };
+		B3DBBC1626F2738500730501 /* ActionsTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActionsTab.storyboard; sourceTree = "<group>"; };
+		B3DBBC1826F276D100730501 /* ModulesTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModulesTab.storyboard; sourceTree = "<group>"; };
+		B3DBBC1B26F279B200730501 /* PeriodSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodSelector.swift; sourceTree = "<group>"; };
+		B3DBBC1C26F279B200730501 /* PeriodSelector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeriodSelector.xib; sourceTree = "<group>"; };
+		B3DBBC2026F27AA400730501 /* ModulesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesController.swift; sourceTree = "<group>"; };
+		B3DBBC2226F27FC400730501 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		B3DBBC2426F2954B00730501 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		B3DBBC2526F2954B00730501 /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
 		B3E01D3526F14CFA00B1BA32 /* SetUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetUp.storyboard; sourceTree = "<group>"; };
 		B3E01D3726F14E8100B1BA32 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B3EBB99826E8A689000A8329 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -150,10 +165,10 @@
 		B3C7C90526E7608700A5A46C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B3C7C91A26E7608700A5A46C /* Errors */,
+				B3C7C91026E7608700A5A46C /* Tasks */,
 				B3C7C90626E7608700A5A46C /* Grades */,
-				B3C7C91026E7608700A5A46C /* StudyComponents */,
-				B3C7C9BB26E7CC7C00A5A46C /* ValidationMethods.swift */,
+				B3C7C91A26E7608700A5A46C /* Errors */,
+				B3DBBC2226F27FC400730501 /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,7 +183,7 @@
 			path = Grades;
 			sourceTree = "<group>";
 		};
-		B3C7C91026E7608700A5A46C /* StudyComponents */ = {
+		B3C7C91026E7608700A5A46C /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
 				B3EBB99826E8A689000A8329 /* Task.swift */,
@@ -179,7 +194,7 @@
 				B3C7C91926E7608700A5A46C /* Session.swift */,
 				B361692226E950E3001DAE26 /* TaskStatus.swift */,
 			);
-			path = StudyComponents;
+			path = Tasks;
 			sourceTree = "<group>";
 		};
 		B3C7C91626E7608700A5A46C /* AssessmentTypes */ = {
@@ -194,9 +209,7 @@
 		B3C7C91A26E7608700A5A46C /* Errors */ = {
 			isa = PBXGroup;
 			children = (
-				B3C7C91B26E7608700A5A46C /* ComponentError.swift */,
-				B3C7C91C26E7608700A5A46C /* GradingError.swift */,
-				B3C7C91D26E7608700A5A46C /* ModuleError.swift */,
+				B3C7C9BB26E7CC7C00A5A46C /* ValidationError.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -204,13 +217,15 @@
 		B3C7C91E26E7608700A5A46C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B33D8D1026F3610A00720C48 /* TaskIcon.swift */,
+				B3DBBC1A26F2797800730501 /* Cells */,
+				B3DBBC1326F271AB00730501 /* MeTab */,
+				B3DBBC1226F271A300730501 /* AddTab */,
+				B3DBBC1126F2718F00730501 /* StatsTab */,
+				B3DBBC1026F2718100730501 /* ModulesTab */,
+				B3DBBC0F26F2715C00730501 /* ActionsTab */,
 				B3E01D3426F14CCB00B1BA32 /* Welcome */,
-				B3C7C91F26E7608700A5A46C /* ModuleTableViewCell.xib */,
-				B3C7C92026E7608700A5A46C /* CustomButton.swift */,
-				B3C7C92326E7608700A5A46C /* ModuleTableViewCell.swift */,
 				B3C7C96326E7AC1500A5A46C /* Main.storyboard */,
-				B3C7C92426E7608700A5A46C /* HeaderTableViewCell.xib */,
-				B3C7C92526E7608700A5A46C /* HeaderTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,8 +233,9 @@
 		B3C7C92626E7608700A5A46C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B3C7C92726E7608700A5A46C /* ModulesTab */,
+				B3801ECB270CB4C2006EC19D /* TabBar.swift */,
 				B3E01D3726F14E8100B1BA32 /* WelcomeViewController.swift */,
+				B3C7C92726E7608700A5A46C /* ModulesTab */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -227,8 +243,7 @@
 		B3C7C92726E7608700A5A46C /* ModulesTab */ = {
 			isa = PBXGroup;
 			children = (
-				B3C7C92826E7608700A5A46C /* ModuleSummaryViewController.swift */,
-				B3C7C92926E7608700A5A46C /* ModulesViewController.swift */,
+				B3DBBC2026F27AA400730501 /* ModulesController.swift */,
 			);
 			path = ModulesTab;
 			sourceTree = "<group>";
@@ -246,6 +261,7 @@
 		B3C7C9B226E7B7AC00A5A46C /* SaveMyGradesTests */ = {
 			isa = PBXGroup;
 			children = (
+				B306517C26F4D84900852CE8 /* SampleUserData.swift */,
 				B3458AA326ECC1D700DD42BB /* GradingStyleTest.swift */,
 				B361692026E93DCE001DAE26 /* TaskFunctionality.swift */,
 				B3C7C9BD26E7D34800A5A46C /* GradingFunctionality.swift */,
@@ -253,6 +269,76 @@
 				B3C7C9B526E7B7AC00A5A46C /* Info.plist */,
 			);
 			path = SaveMyGradesTests;
+			sourceTree = "<group>";
+		};
+		B3DBBC0F26F2715C00730501 /* ActionsTab */ = {
+			isa = PBXGroup;
+			children = (
+				B3DBBC1626F2738500730501 /* ActionsTab.storyboard */,
+			);
+			path = ActionsTab;
+			sourceTree = "<group>";
+		};
+		B3DBBC1026F2718100730501 /* ModulesTab */ = {
+			isa = PBXGroup;
+			children = (
+				B3DBBC1826F276D100730501 /* ModulesTab.storyboard */,
+				B3C7C91F26E7608700A5A46C /* ModuleTableViewCell.xib */,
+				B3C7C92326E7608700A5A46C /* ModuleTableViewCell.swift */,
+				B3C7C92426E7608700A5A46C /* HeaderTableViewCell.xib */,
+				B3C7C92526E7608700A5A46C /* HeaderTableViewCell.swift */,
+			);
+			path = ModulesTab;
+			sourceTree = "<group>";
+		};
+		B3DBBC1126F2718F00730501 /* StatsTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StatsTab;
+			sourceTree = "<group>";
+		};
+		B3DBBC1226F271A300730501 /* AddTab */ = {
+			isa = PBXGroup;
+			children = (
+				B3801EC9270CAB67006EC19D /* AddTab.storyboard */,
+				B3801EC7270CA90D006EC19D /* Fields.txt */,
+			);
+			path = AddTab;
+			sourceTree = "<group>";
+		};
+		B3DBBC1326F271AB00730501 /* MeTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MeTab;
+			sourceTree = "<group>";
+		};
+		B3DBBC1A26F2797800730501 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B3DBBC2826F2956000730501 /* TaskCell */,
+				B3DBBC1F26F279BA00730501 /* PeriodSelector */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B3DBBC1F26F279BA00730501 /* PeriodSelector */ = {
+			isa = PBXGroup;
+			children = (
+				B3DBBC1B26F279B200730501 /* PeriodSelector.swift */,
+				B3DBBC1C26F279B200730501 /* PeriodSelector.xib */,
+			);
+			path = PeriodSelector;
+			sourceTree = "<group>";
+		};
+		B3DBBC2826F2956000730501 /* TaskCell */ = {
+			isa = PBXGroup;
+			children = (
+				B3DBBC2426F2954B00730501 /* TaskCell.swift */,
+				B3DBBC2526F2954B00730501 /* TaskCell.xib */,
+			);
+			path = TaskCell;
 			sourceTree = "<group>";
 		};
 		B3E01D3426F14CCB00B1BA32 /* Welcome */ = {
@@ -346,10 +432,16 @@
 				B3C7C96526E7AC1500A5A46C /* LaunchScreen.storyboard in Resources */,
 				B3C7C92B26E7608700A5A46C /* UKAlevel.json in Resources */,
 				B3E01D3626F14CFA00B1BA32 /* SetUp.storyboard in Resources */,
+				B3DBBC1E26F279B200730501 /* PeriodSelector.xib in Resources */,
+				B3DBBC2726F2954B00730501 /* TaskCell.xib in Resources */,
+				B3801EC8270CA90D006EC19D /* Fields.txt in Resources */,
+				B3801ECA270CAB67006EC19D /* AddTab.storyboard in Resources */,
 				B3C7C94126E7608700A5A46C /* HeaderTableViewCell.xib in Resources */,
 				B3C7C96726E7AE5B00A5A46C /* Main.storyboard in Resources */,
 				B3C7C8FB26E75EFA00A5A46C /* Assets.xcassets in Resources */,
 				B3C7C95A26E79E8100A5A46C /* RussiaFivePointsSystem.json in Resources */,
+				B3DBBC1726F2738500730501 /* ActionsTab.storyboard in Resources */,
+				B3DBBC1926F276D100730501 /* ModulesTab.storyboard in Resources */,
 				B3C7C92C26E7608700A5A46C /* UKDegreeClassification.json in Resources */,
 				B3C7C93D26E7608700A5A46C /* ModuleTableViewCell.xib in Resources */,
 			);
@@ -370,27 +462,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C7C93726E7608700A5A46C /* Exam.swift in Sources */,
+				B3DBBC2326F27FC400730501 /* UserData.swift in Sources */,
+				B3DBBC1D26F279B200730501 /* PeriodSelector.swift in Sources */,
 				B39C775526E9031E001E48D7 /* Period.swift in Sources */,
-				B3C7C94326E7608700A5A46C /* ModuleSummaryViewController.swift in Sources */,
+				B3DBBC2626F2954B00730501 /* TaskCell.swift in Sources */,
+				B33D8D1126F3610A00720C48 /* TaskIcon.swift in Sources */,
 				B361692326E950E3001DAE26 /* TaskStatus.swift in Sources */,
-				B3C7C93A26E7608700A5A46C /* ComponentError.swift in Sources */,
 				B33ED7C826EC01D100F23892 /* Assessment.swift in Sources */,
-				B3C7C93E26E7608700A5A46C /* CustomButton.swift in Sources */,
+				B306518126F4F88500852CE8 /* SampleUserData.swift in Sources */,
 				B3C7C8F226E75EF900A5A46C /* AppDelegate.swift in Sources */,
 				B33ED7C926EC01F700F23892 /* GradingStyle.swift in Sources */,
 				B3EBB99926E8A689000A8329 /* Task.swift in Sources */,
 				B3C7C8F426E75EF900A5A46C /* SceneDelegate.swift in Sources */,
 				B3C7C93926E7608700A5A46C /* Session.swift in Sources */,
 				B3C7C94026E7608700A5A46C /* ModuleTableViewCell.swift in Sources */,
+				B3801ECC270CB4C2006EC19D /* TabBar.swift in Sources */,
 				B3E01D3826F14E8100B1BA32 /* WelcomeViewController.swift in Sources */,
-				B3C7C94426E7608700A5A46C /* ModulesViewController.swift in Sources */,
-				B3C7C9BC26E7CC7C00A5A46C /* ValidationMethods.swift in Sources */,
-				B3C7C93B26E7608700A5A46C /* GradingError.swift in Sources */,
+				B3C7C9BC26E7CC7C00A5A46C /* ValidationError.swift in Sources */,
 				B3C7C92A26E7608700A5A46C /* Grade.swift in Sources */,
 				B3C7C94226E7608700A5A46C /* HeaderTableViewCell.swift in Sources */,
 				B3C7C93826E7608700A5A46C /* Quiz.swift in Sources */,
 				B39C775326E90313001E48D7 /* Module.swift in Sources */,
-				B3C7C93C26E7608700A5A46C /* ModuleError.swift in Sources */,
+				B3DBBC2126F27AA400730501 /* ModulesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +495,7 @@
 				B3458AA426ECC1D700DD42BB /* GradingStyleTest.swift in Sources */,
 				B3458AA526ECC2E100DD42BB /* GradingFunctionality.swift in Sources */,
 				B361692126E93DCE001DAE26 /* TaskFunctionality.swift in Sources */,
+				B306518026F4F87D00852CE8 /* SampleUserData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

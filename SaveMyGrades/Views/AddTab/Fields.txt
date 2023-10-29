@@ -1,0 +1,11 @@
+TaskType
+Name
+Status
+Deadline
+Description
+Parent
+
+Grade
+Weight
+
+Start Date

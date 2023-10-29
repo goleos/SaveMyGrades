@@ -28,10 +28,6 @@ enum TaskStatus: String, CaseIterable {
         return self.rawValue.components(separatedBy: ": ")[1]
     }
     
-    var component: String {
-        return self.rawValue.components(separatedBy: ": ")[0]
-    }
-    
     var completed: Bool {
         switch self {
         case .taskCompleted: return true
